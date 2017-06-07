@@ -1,0 +1,218 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.next,
+	.call{
+		display: none;
+	}
+	.text-right h4{
+		font-size: 20px;
+	}
+	.text-right{
+		font-size: 12px;
+	}
+	.email a{
+		font-size: 14px;
+	}
+	.menu{
+		display: none;
+	}
+	.c-requisites{
+		float: none;
+	}
+	.breadcrumbs{
+		float: none;
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.video{
+		margin-bottom: 70px;
+	}
+	.soc-2{
+		display: inline-block;
+		margin-right: 6px;
+		margin-left: 10px;
+	}
+	.btn{
+		background: #0d102f;
+		color: #f6f6f6;
+	}
+
+	h1.title{
+		font-size: 27px;
+	}
+	.middle-text p{
+		font-size: 11px;
+	}
+	.dropdown-menu {
+		left: 50px!important;
+	}
+	.contact{
+		text-align: center;
+	}
+	.c-requisites{
+		display: inline-block;
+		text-align: left;
+	}
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.sec-3 .video,
+	h3.title {
+		text-align: center;
+	}
+	.sec-3-block{
+		margin-left: 60px;
+	}
+	.sec-7-item{
+		max-width: 361px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.footer{
+		margin: 0 auto;
+	}
+	.brand{
+		display: none;
+	}
+	.middle-xs-hidden{
+		display: none;
+	}
+	.middle-bg{
+		display: block;
+	}
+	.middle{
+		background-size: cover;
+		background-position: 45% center;
+	}
+	.attention{
+		display: none;
+	}
+	.btn{
+		margin-left: 0;
+	}
+	.footer-bottom{
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	input{
+		margin: 10px 0 15px!important;
+	}
+	.footer-t p.footer-t-phone,
+	.footer-t p.footer-t-mobile{
+		font-size: 24px;
+	}
+	p.footer-t-mobile{
+		background: url(../img/mobile.png) no-repeat 2% bottom;
+	}
+	h1.title{
+		font-size: 23px;
+	}
+	.middle-text p{
+		font-size: 9px;
+	}
+	.footer{
+		text-align: center;
+	}
+
+	.soc-3{
+		display: none;
+	}
+	.soc-2{
+		margin-right: 72px;
+	}
+	.footer-t-descr{
+		display: none;
+	}
+	.footer-nav{
+		margin-top: 37px;
+		margin-left: 60px;
+	}
+	.dropdown-menu {
+		left: 200px!important;
+	}
+	.middle-text {
+	    margin-top: 550px;
+	}
+	.footer-t-wrap.header-t{
+		display: none;
+	}
+	.news-img{
+		float: none;
+	}
+}
+
+@media only screen and (max-width : 645px) {
+	.dropdown-menu {
+		left: 120px!important;
+	}
+	iframe{
+		height: 300px;
+	}
+	.prokat-item-video{
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.prokat-item-video iframe{
+		height: 300px;
+	}
+	.prokat-item-img,
+	.prokat-item-character{
+		float: none;
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.middle-bg{
+		display: none;
+	}
+	.footer-t-descr2{
+		display: none;
+	}
+	
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.menu-btn{
+		display: none;
+	}
+}
