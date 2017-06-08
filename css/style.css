@@ -1081,6 +1081,7 @@ h4.brif-text{
 	font-size: 24px;
 	color: #323232;
 	margin: 0;
+	max-width: 500px;
 }
 .prokat-item-img{
 	height: auto;
@@ -1248,6 +1249,7 @@ h4.brif-text{
 	font-family: "Roboto";
 	color: #323232;
 	padding-top: 5px;
+	font-weight: 400;
 }
 .form-style input{
 	font-size: 16px;
@@ -1255,7 +1257,6 @@ h4.brif-text{
 	color: #323232;
 	border: 1px solid #d7d7d7;
 	border-radius: 5px;
-	max-width: 500px;
 	display: inline-block;
 	outline: none;
 }
@@ -1266,16 +1267,7 @@ h4.brif-text{
 }
 .line{
 	border-bottom: 1px solid #eaeaea;
-	padding: 15px 0;
-}
-.form-style input.input-l{
-	max-width: 500px;
-}
-.form-style input.input-m{
-	max-width: 385px;
-}
-.form-style input.input-s{
-	max-width: 185px;
+	margin: 20px 0;
 }
 .form-style input.r_button{
 	display: none;
@@ -1284,14 +1276,13 @@ h4.brif-text{
 	background: url("../img/radio.png") no-repeat;
 	cursor: pointer;
 	padding-left: 35px;
-	background-position: 0% 300%;
+	background-position: 0% 0%;
+	text-align: left;
 }
 .form-style input.r_button:checked + label {
 	background: url("../img/radio-active.png") no-repeat;
 	padding-left: 35px;
-	background-position: 0% 100%;
-}
-#form_radio .form-item{
+	background-position: 0% 0%;
 	text-align: left;
 }
 .inner{
@@ -1308,24 +1299,30 @@ h4.brif-text{
 .form-item p span{
 	font-family: "Roboto";
 }
-#form_tech label{
+.form_tech label{
 	max-width: 510px;
+}
+.form-radio .form-item{
+	text-align: left;
 }
 .korpus2{
 	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: right;
 }
 .korpus2 > div, 
 .korpus2 > input{
 	display: none;
 }
-.korpus2 label{
-	padding: 28px 20px; 
+.korpus2 > label{
+	padding: 15px 10px; 
 	background: #fff;
 	cursor: pointer; 
 	text-align: left;
 	margin-right: -4px;
 	margin-left: 0;
 	border-bottom: 1px solid #e8e8e8;
+	height: 95px;
 }
 .korpus2 input[type="radio"]:checked + label{
 	border-top: 3px solid #0168b4;
@@ -1344,21 +1341,189 @@ h4.brif-text{
 	font-family: "RobotoLight";
 	line-height: 22px;
 }
-.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2){
-	display: block; 
-	border: 3px solid #fff;
+.korpus2 .form-item label{
+	font-size: 14px;
+	color: #010212;
+	font-family: "OpenSansRegular";
 }
-.korpus > div{
-	-webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.22);
-	-moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.22);
-	box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.22);
+.korpus2 > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.korpus2 > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.korpus2 > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+.korpus2 > input:nth-of-type(4):checked ~ div:nth-of-type(4){
+	display: block;
+	border-bottom: 1px solid #e8e8e8;
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+	margin-top: -5px;
+	margin-right: -5px;
+	padding-top: 45px;
+}
+.korpus2-item p{
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	color: #010212;
+	font-weight: 700;
+	display: inline-block;
+}
+.korpus2-item{
+	padding-bottom: 15px;
+}
+.korpus2-item .btn2{
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	color: #fff;
+	width: 260px;
+	height: 43px;
+	padding: 0;
+	margin: 0;
+	margin-left: 12px;
 }
 .korpus2-img{
 	display: inline-block;
     margin-right: 5px;
+	vertical-align: top;
+    padding-top: 5px;
 }
 .korpus2-text{
 	display: inline-block;
 	width: 205px;
+}
+.input-l{
+	display: inline-block;
+	width: 500px;
+}
+.input-ml{
+	display: inline-block;
+	width: 470px;
+}
+.input-s{
+	display: inline-block;
+	width: 185px;
+}
+.input-m{
+	display: inline-block;
+	width: 380px;
+}
+.input-sm{
+	display: inline-block;
+	width: 205px;
+}
+.form-input-center .form-item{
+	text-align: center;
+}
+form#form_party2 {
+    margin-top: 30px;
+}
+#count .form-item{
+	text-align: center;
+}
+.zakaz-item textarea{
+	width: 100%;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #323232;
+	padding: 15px 12px;
+	height: 120px;
+}
+.textarea-wrap{
+	padding: 0 30px;
+}
+.btn2.order2{
+	width: 347px;
+	height: 88px;
+	padding: 0;
+	margin: 0 auto;
+}
+#form_order .btn2.order2{
+	margin: 33px 0 230px;
+}
+.btn-wrap{
+	display: block;
+}
+.btn-wrap .form-item{
+	text-align: center;
+}
+.prodaja_koncentrata .sidebar li a{
+	font-size: 14px;
+	width: 100%;
+}
+.prodaja_koncentrata .prokat-wrap{
+	padding-bottom: 180px;
+}
+.stock{
+	display: inline-block;
+}
+.stock-check{
+	display: inline-block;
+	width: 25px;
+	height: 26px;
+	background: url(../img/check-green.png) no-repeat;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.prokat-wrap .prokat-item-character p{
+	margin: 0;
+}
+.prokat-wrap .prokat-item-character p.type{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+.dostavka h5{
+	color: #000;
+	font-family: "RobotoMedium";
+	font-size: 18px;
+	margin: 0;
+}
+.dostavka p{
+	color: #323232;
+	font-family: "RobotoLight";
+	font-size: 16px;
+}
+.dostavka{
+	padding: 30px 0 230px;
+}
+.bus{
+	max-width: 680px;
+	margin-top: 30px;
+}
+.bus img{
+	width: 100%;
+}
+.dostavka ul{
+	padding-left: 20px;
+}
+.dostavka ul li{
+	list-style-image: url(../img/circle-blue.png);
+	margin-top: 15px;
+}
+.dostavka p{
+	margin: 0;
+    line-height: 36px;
+}
+.dostavka-text{
+	margin: 45px 0;
+}
+.zakaz-item h5{
+	color: #000;
+    font-size: 18px;
+    font-family: "RobotoMedium";
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+.zakaz-koncentrata input.r_button{
+	display: none;
+}
+.zakaz-koncentrata input.r_button + label {
+	background: url("../img/radio.png") no-repeat;
+	cursor: pointer;
+	padding-left: 35px;
+	background-position: 0% 50%;
+}
+.zakaz-koncentrata input.r_button:checked + label {
+	background: url("../img/radio-active.png") no-repeat;
+	padding-left: 35px;
+	background-position: 0% 50%;
 }

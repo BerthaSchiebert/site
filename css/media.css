@@ -60,6 +60,9 @@
 		display: inline-block;
 		text-align: left;
 	}
+	.form_tech .input-sm{
+		margin-bottom: 50px;
+	}
 
 }
 /* Small Devices, Tablets */
@@ -147,6 +150,26 @@
 	}
 	.news-img{
 		float: none;
+	}
+	.korpus2-item {
+	    padding: 0 20px;
+	}
+	.korpus2-item .input-l{
+	   	display: block;
+	}
+}
+
+@media only screen and (max-width : 690px) {
+	.input-l,
+	.input-s,
+	.input-m,
+	.input-sm,
+	.input-ms{
+		display: block;
+		width: 100%;
+	}
+	.korpus2-item p{
+		display: block;
 	}
 }
 

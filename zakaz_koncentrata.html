@@ -137,7 +137,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="company-title">
-								<h3 class="title">Форма заказа проката оборудования</h3>
+								<h3 class="title">Форма заказа</h3>
 								<div class="breadcrumbs">
 									<a href="#" class="b-main">Главная страница</a>
 								</div>
@@ -169,96 +169,116 @@
 									</div>
 								</div>
 								<div class="zakaz-item">
-									<h3>Введите данные по празднику</h3>
+									<h3>Введите количество товара</h3>
+									<h5>Пенный концентрат</h5>
 									<div class="form-style">
 										<div class="inner">
 											<div class="form-item">
-												<label>Дата праздника</label>
+												<label>MBN foam fluid 5</label>
 												<div class="input-s">
 													<input type="text" name="date_party" id="date_party">
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Время официального начала вашего праздника</label>
+												<label>MBN foam fluid 25</label>
 												<div class="input-s">
 													<input type="text" name="time_party" id="time_party">
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Время начала ПЕННОГО ШОУ</label>
+												<label>MBN foam fluid 60</label>
 												<div class="input-s">
 													<input type="text" name="start_party" id="start_party">
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Время окончания ПЕННОГО ШОУ</label>
+												<label>Universal Effects xt-foam fluid cc5</label>
 												<div class="input-s">
 													<input type="text" name="end_party" id="end_party">
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="line"></div>
+									<h5>Ароматизатор</h5>
 									<div class="form-style">
 										<div class="inner">
 											<div class="form-item">
-												<label>Название площадки/места</label>
-												<div class="input-l">
+												<label>MBN Tuttu-Frutti 0,5</label>
+												<div class="input-s">
+													<input type="text" name="date_party" id="date_party">
+												</div>
+											</div>
+										</div>
+									</div>
+									<h5>Крышка-рассекатель</h5>
+									<div class="form-style">
+										<div class="inner">
+											<div class="form-item">
+												<label>25</label>
+												<div class="input-s">
+													<input type="text" name="date_party" id="date_party">
+												</div>
+												<label>60</label>
+												<div class="input-s">
+													<input type="text" name="date_party" id="date_party">
+												</div>
+											</div>
+										</div>
+									</div>
+									<h5>Генератор пены</h5>
+									<div class="form-style">
+										<div class="inner">
+											<div class="form-item">
+												<label>Pena-party jet foam 500</label>
+												<div class="input-s">
 													<input type="text" name="date_party" id="date_party">
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Точный адрес площадки</label>
-												<div class="input-l">
-													<input type="text" name="time_party" id="time_party">
+												<label>MBN FC-500</label>
+												<div class="input-s">
+													<input type="text" name="date_party" id="date_party">
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Приблизительное расстояние от МКАД до площадки</label>
-												<div class="input-m">
-													<input type="text" name="start_party" id="start_party">
-												</div>
-											</div>
-											<div class="form-item">
-												<label>Приблизительное расстояние от МКАД до площадки</label>
-												<div class="input-m">
-													<input type="text" name="end_party" id="end_party">
+												<label>MBN F-300</label>
+												<div class="input-s">
+													<input type="text" name="date_party" id="date_party">
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="zakaz-item">
-									<h3>Введите модель генератора пены и введите необходимое количество</h3>
-									<div class="form-style form-radio">
+									<h3>Выберите вариант доставки</h3>
+									<div class="form-style form_tech">
 										<div class="inner">
-											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn" id="r_1">
-												<label for="r_1">MBN FC-500 (пушка на 300 человек)</label>
+											<div class="form-item zakaz-koncentrata">
+												<input type="radio" class="r_button" name="radio_zakaz" id="z_1">
+												<label for="z_1">Самовывоз из офиса <br> (г. Москва ул. Краснодарская, д.46)</label>
+												<div class="input-ml">
+													<input type="text" name="phone" id="phone" required>
+												</div>
 											</div>
 											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn" id="r_2">
-												<label for="r_2">UNIVERSAL EFFECTS JET-FOAM 350 (пушка на 200 человек)</label>
+												<input type="radio" class="r_button" name="radio_zakaz" id="z_2">
+												<label for="z_2">Доставка по Москве и МО <br> (введите подробный адрес)</label>
+												<div class="input-ml">
+													<input type="text" name="phone" id="phone" required>
+												</div>
 											</div>
 											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn" id="r_3">
-												<label for="r_3">ENA-PARTY JET-FOAM 500 (самовывоз! пушка на 200 человек)</label>
+												<input type="radio" class="r_button" name="radio_zakaz" id="z_3">
+												<label for="z_3">Доставка транспортной компанией до вашего города <br>
+												(введите название населенного пункта и <br>
+												предпочитаемые транспортные компании)</label>
+												<div class="input-ml">
+													<input type="text" name="email" id="email" required>
+												</div>
 											</div>
 											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn" id="r_4">
-												<label for="r_4">UNIVERSAL EFFECTS FOAM 350 (водопад на 500 человек)</label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="zakaz-item">
-									<h3>Введите количество канистр пенного концентрата</h3>
-									<div class="form-style form-input-center">
-										<div class="inner">
-											<div class="form-item">
-												<p><span>MBN foam fluid 5 L.</span></p>
-												<p>(1 пятилитровая канистра на 50 человек в среднем)</p>
-												<div class="input-sm">
+												<label>Доставка авиа транспортом <br> (введите город)</label>
+												<div class="input-ml">
 													<input type="text" name="email" id="email" required>
 												</div>
 											</div>
@@ -266,47 +286,24 @@
 									</div>
 								</div>
 								<div class="zakaz-item">
-									<h3>Выберите дополнительные услуги</h3>
-									<div class="form-style form-radio">
+									<h3>Введите данные получателя груза</h3>
+									<div class="form-style">
 										<div class="inner">
 											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn2" id="r_5">
-												<label for="r_5">Подиум 2*2 м</label>
-											</div>
-											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn2" id="r_6">
-												<label for="r_6">Доставка воды</label>
-											</div>
-											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn2" id="r_7">
-												<label for="r_7">Нагрев воды</label>
-											</div>
-											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_btn2" id="r_8">
-												<label for="r_8">Звук, свет, DJ</label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="zakaz-item">
-									<h3>Введите технические данные:</h3>
-									<div class="form-style form_tech">
-										<div class="inner">
-											<div class="form-item">
-												<label>Примерное расстояние от источника электрического тока(розетка 220 вольт, 3,5 кВт) до места установки пеногенератора</label>
-												<div class="input-sm">
+												<label>Ф.И.О.</label>
+												<div class="input-l">
 													<input type="text" name="fio" id="fio" required>
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Примерное расстояние от источника теплой водопроводной водыдо места установки пеногенератора</label>
-												<div class="input-sm">
+												<label>Серия и номер паспорта:</label>
+												<div class="input-l">
 													<input type="text" name="phone" id="phone" required>
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Примерное расстояние от источника теплой водопроводной водыдо места установки пеногенератора</label>
-												<div class="input-sm">
+												<label>Номер телеофна:</label>
+												<div class="input-l">
 													<input type="text" name="email" id="email" required>
 												</div>
 											</div>
