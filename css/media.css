@@ -27,6 +27,16 @@
 		margin-bottom: 20px;
 		width: 100%;
 	}
+	.label-block{
+		display: block;
+	}
+	.korpus-block{
+		display: block;
+	}
+	.korpus2 input[type="radio"]:checked + label{
+		border-left: none;
+		border-right: none;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -164,7 +174,8 @@
 	.input-s,
 	.input-m,
 	.input-sm,
-	.input-ms{
+	.input-ms,
+	.input-ml{
 		display: block;
 		width: 100%;
 	}

@@ -254,33 +254,38 @@
 									<div class="form-style form_tech">
 										<div class="inner">
 											<div class="form-item zakaz-koncentrata">
+												<label class="label-block">Самовывоз из офиса <br> (г. Москва ул. Краснодарская, д.46)</label>
+												<div class="input-ml">
+													<input type="text" name="phone" id="phone" required>
+												</div>
 												<input type="radio" class="r_button" name="radio_zakaz" id="z_1">
-												<label for="z_1">Самовывоз из офиса <br> (г. Москва ул. Краснодарская, д.46)</label>
+												<label for="z_1"></label>
+											</div>
+											<div class="form-item zakaz-koncentrata">
+												<label class="label-block">Доставка по Москве и МО <br> (введите подробный адрес)</label>
 												<div class="input-ml">
 													<input type="text" name="phone" id="phone" required>
 												</div>
-											</div>
-											<div class="form-item">
 												<input type="radio" class="r_button" name="radio_zakaz" id="z_2">
-												<label for="z_2">Доставка по Москве и МО <br> (введите подробный адрес)</label>
-												<div class="input-ml">
-													<input type="text" name="phone" id="phone" required>
-												</div>
+												<label for="z_2"></label>
 											</div>
-											<div class="form-item">
-												<input type="radio" class="r_button" name="radio_zakaz" id="z_3">
-												<label for="z_3">Доставка транспортной компанией до вашего города <br>
+											<div class="form-item zakaz-koncentrata">
+												<label class="label-block">Доставка транспортной компанией до вашего города <br>
 												(введите название населенного пункта и <br>
 												предпочитаемые транспортные компании)</label>
 												<div class="input-ml">
 													<input type="text" name="email" id="email" required>
 												</div>
+												<input type="radio" class="r_button" name="radio_zakaz" id="z_3">
+												<label for="z_3"></label>
 											</div>
-											<div class="form-item">
-												<label>Доставка авиа транспортом <br> (введите город)</label>
+											<div class="form-item zakaz-koncentrata">
+												<label class="label-block">Доставка авиа транспортом <br> (введите город)</label>
 												<div class="input-ml">
 													<input type="text" name="email" id="email" required>
 												</div>
+												<input type="radio" class="r_button" name="radio_zakaz" id="z_4">
+												<label for="z_4"></label>
 											</div>
 										</div>
 									</div>
@@ -290,19 +295,19 @@
 									<div class="form-style">
 										<div class="inner">
 											<div class="form-item">
-												<label>Ф.И.О.</label>
+												<label class="label-block">Ф.И.О.</label>
 												<div class="input-l">
 													<input type="text" name="fio" id="fio" required>
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Серия и номер паспорта:</label>
+												<label class="label-block">Серия и номер паспорта:</label>
 												<div class="input-l">
 													<input type="text" name="phone" id="phone" required>
 												</div>
 											</div>
 											<div class="form-item">
-												<label>Номер телеофна:</label>
+												<label class="label-block">Номер телеофна:</label>
 												<div class="input-l">
 													<input type="text" name="email" id="email" required>
 												</div>
@@ -316,24 +321,24 @@
 										<div class="inner">
 											<div class="korpus2">
 												<input type="radio" name="radio_korpus2" checked="checked" id="vkl3"/>
-												<label for="vkl3">
+												<label for="vkl3" class="korpus-block">
 													<span class="korpus2-img"><img src="img/money.png" alt=""></span>
 													<span class="korpus2-text"><p>Наличными при получении
 														(только для самовывоза и 
 														доставки по Москве и МО)</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl4"/>
-												<label for="vkl4">
+												<label for="vkl4" class="korpus-block">
 													<span class="korpus2-img"><img src="img/bank.png" alt=""></span>
 													<span class="korpus2-text"><p>на карту <br> Сбербанка</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl5"/>
-												<label for="vkl5">
+												<label for="vkl5" class="korpus-block">
 													<span class="korpus2-img"><img src="img/alfa.png" alt=""></span>
 													<span class="korpus2-text"><p>на карту <br> Альфа банка</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl6"/>
-												<label for="vkl6">
+												<label for="vkl6" class="korpus-block">
 													<span class="korpus2-img"><img src="img/pen.png" alt=""></span>
 													<span class="korpus2-text"><p>безналичным переводом (введите реквизиты)</p></span>
 												</label>
@@ -378,7 +383,10 @@
 															</div>
 															<div class="form-item">
 																<p>Прикрепить файл с реквизитами</p>
-																<button class="btn2">Выбрать файл</button>
+																<div class="file_upload">
+																	<button class="btn2">Выбрать файл</button>
+																	<input type="file">
+																</div>
 															</div>
 														</div>
 													</div>

@@ -319,24 +319,24 @@
 										<div class="inner">
 											<div class="korpus2">
 												<input type="radio" name="radio_korpus2" checked="checked" id="vkl3"/>
-												<label for="vkl3">
+												<label for="vkl3" class="korpus-block">
 													<span class="korpus2-img"><img src="img/money.png" alt=""></span>
 													<span class="korpus2-text"><p>Наличными при получении
 														(только для самовывоза и 
 														доставки по Москве и МО)</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl4"/>
-												<label for="vkl4">
+												<label for="vkl4" class="korpus-block">
 													<span class="korpus2-img"><img src="img/bank.png" alt=""></span>
 													<span class="korpus2-text"><p>на карту <br> Сбербанка</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl5"/>
-												<label for="vkl5">
+												<label for="vkl5" class="korpus-block">
 													<span class="korpus2-img"><img src="img/alfa.png" alt=""></span>
 													<span class="korpus2-text"><p>на карту <br> Альфа банка</p></span>
 												</label>
 												<input type="radio" name="radio_korpus2" id="vkl6"/>
-												<label for="vkl6">
+												<label for="vkl6" class="korpus-block">
 													<span class="korpus2-img"><img src="img/pen.png" alt=""></span>
 													<span class="korpus2-text"><p>безналичным переводом (введите реквизиты)</p></span>
 												</label>
@@ -381,7 +381,10 @@
 															</div>
 															<div class="form-item">
 																<p>Прикрепить файл с реквизитами</p>
-																<button class="btn2">Выбрать файл</button>
+																<div class="file_upload">
+																	<button class="btn2">Выбрать файл</button>
+																	<input type="file">
+																</div>
 															</div>
 														</div>
 													</div>
